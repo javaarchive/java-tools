@@ -37,7 +37,7 @@ public class d0wnloader {
 		String repoEnd = "javaarchive/java-tools/master/"; // username/repo-name/branch/
 		String u = repoBase + repoEnd;
 		temp = new JFrame("Download...");
-		download(u + "javatools.java","usacotools.java");
+		download(u + "javatools.java","javatools.java");
 		download(u + "jt.java","jt.java");
 		download(u + "compilestandard.java","compilestandard.java");
 		JOptionPane.showMessageDialog(temp , "Downloader is done!");

@@ -17,13 +17,13 @@ public class compilestandard extends usacotools {
 		BufferedReader f;
 		if(args.length==1) {
 			if(args[0].equals("eclipse")) {
-				f=mreader("src/usacotools.java");
+				f=mreader("src/javatools.java");
 			}else {
-				f=mreader("usacotools.java");
+				f=mreader("javatools.java");
 			}
 			
 		}else {
-				f=mreader("usacotools.java");
+				f=mreader("javatools.java");
 			}
 		
 		print("build");
@@ -35,20 +35,20 @@ public class compilestandard extends usacotools {
 		    full=full+st+"\n";
 		  }
 		String text=full.replace("if(!(lock)) {return null;}", "");
-		text=text.replace("public abstract class usacotools","public abstract class utools");
+		text=text.replace("public abstract class usacotools","public abstract class jt");
 	 	print(text);
-	 	PrintWriter pw=mwriter("utools.java");
+	 	PrintWriter pw=mwriter("jt.java");
 	 	if(args[0].equals("eclipse")) {
-			pw=mwriter("src/utools.java");
+			pw=mwriter("src/jt.java");
 		}else {
 			
 		}
 	 	pw.println(text);
 	 	pw.close();
-	 	print("utools.java is the one you should copy into your code but usacotools is the one you should extend");
+	 	print("jt.java is the one you should copy into your code but usacotools is the one you should extend");
 	 try{
-		 print("utools.java SHA256: "+sha256(text));
-	 	print("usacotools.java SHA256: "+sha256(full));
+		 print("jt.java SHA256: "+sha256(text));
+	 	print("javatools.java SHA256: "+sha256(full));
 	 }catch(Exception e) {
 		 e.printStackTrace();
 	 }

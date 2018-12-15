@@ -19,7 +19,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.*;
 import java.util.regex.*;
-public abstract class utools {
+public abstract class jt {
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
 	public static final String ANSI_RED = "\u001B[31m";

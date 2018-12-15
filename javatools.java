@@ -39,6 +39,9 @@ public abstract class javatools {
 	public static void blockio() {
 		IO=false;
 	}
+	public static Random getrandom() {
+		return new Random();
+	}
 	public static boolean isrect(int[][] map,int x,int y) {
 		int cachedsize=-1;
 		int cachey=-1;

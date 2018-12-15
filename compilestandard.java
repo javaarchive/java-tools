@@ -1,7 +1,7 @@
 import java.io.*;
 import java.security.MessageDigest;
 import java.security.*;
-public class compilestandard extends usacotools {
+public class compilestandard extends javatools {
 	public static String sha256(String input) throws NoSuchAlgorithmException {
         MessageDigest mDigest = MessageDigest.getInstance("SHA-256");
         byte[] result = mDigest.digest(input.getBytes());

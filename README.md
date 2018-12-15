@@ -1,2 +1,2 @@
-# java-tools
-This tools are very useful especially for usaco. Build files are also included to build a special usaco version. To skip dealing with zip extractors and stuff a downloader file is all you need.
+# Let's get downloader
+First download installer.jar to your java tools installation directory. Then run the jar file and just wait for it to download.
